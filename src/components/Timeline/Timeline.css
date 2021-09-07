@@ -1,0 +1,21 @@
+.Timeline-Wrapper {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    bottom: -230px;
+}
+
+.Timeline-Cards {
+    flex: 1;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.Timeline-Button {
+    width: 40px;
+    padding: 0 20px;
+}
+
+.Timeline-Prev {
+    transform: rotate(180deg);
+}

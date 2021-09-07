@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
-import {Card} from './components'
+import {Timeline} from './components'
 
 ReactDOM.render(
-    <Card />,
+    <Timeline />,
   document.getElementById('root')
 );

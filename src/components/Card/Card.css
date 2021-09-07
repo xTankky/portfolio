@@ -1,12 +1,13 @@
 .Card-Wrapper {
-    margin: 15px;
+    margin: 0 20px;
+    flex: 1;
     border: 1px solid black;
     border-radius: 12px;
-    max-width: 200px;
     min-height: 300px;
     text-align: center;
     -webkit-box-shadow: 0px 0px 22px 0px #000000;
     box-shadow: 0px 0px 22px 0px #000000;
+    transition: transform 0.7s ease-in-out;
 }
 
 .Card-Wrapper hr {
@@ -33,4 +34,13 @@
 .Card-Body {
     text-align: left;
     padding: 10px;
+}
+
+.Card-Body ul {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.Card-Up {
+    transform: translateY(-230px);
 }
