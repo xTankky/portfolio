@@ -2,7 +2,8 @@
     display: flex;
     position: absolute;
     width: 100vw;
-    bottom: -230px;
+    height: 1000px;
+    bottom: -925px;
 }
 
 .Timeline-Cards {

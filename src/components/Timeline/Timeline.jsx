@@ -24,8 +24,9 @@ const LargeScreen = ({ children }) => {
     return isLargeScreen ? children : null
 }
 
-const Cards = Cards_Contents.map((val) => (
+const Cards = Cards_Contents.map((val, i) => (
     <Card
+        id={`Card-${i}`}
         year={val.year}
         title={val.title}
         desc={val.desc}

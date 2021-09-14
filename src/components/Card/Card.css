@@ -3,6 +3,7 @@
     flex: 1;
     border: 1px solid black;
     border-radius: 12px;
+    height: min-content;
     min-height: 300px;
     text-align: center;
     -webkit-box-shadow: 0px 0px 22px 0px #000000;
@@ -42,5 +43,5 @@
 }
 
 .Card-Up {
-    transform: translateY(-230px);
+    transform: translateY(-300px);
 }

@@ -6,16 +6,33 @@ export default class Card extends React.Component {
         super(props);
 
         this.state = {
-            up: false
+            raise: false,
+            raiseStyle: {
+                transform: `translate(0px, 0px)`
+            }
         }
     }
 
+    raiseCard() {
+        const raised = this.state.raise;
+        const height = raised ? 0 : document.getElementById(this.props.id).clientHeight - 72; //72 pour prendre en compte le header qui dépasse
+
+        const style = {
+            transform: `translate(0px, -${height}px)`
+        }
+
+        this.setState({ raise: !raised, raiseStyle: style })
+    }
+
     render() {
+
         return (
             <div
-                className={this.state.up ? "Card-Wrapper Card-Up" : "Card-Wrapper"}
-                onMouseEnter={() => this.setState({ up: true })}
-                onMouseLeave={() => this.setState({ up: false })}
+                id={this.props.id}
+                className="Card-Wrapper"
+                onMouseEnter={() => this.raiseCard()}
+                onMouseLeave={() => this.raiseCard()}
+                style={this.state.raiseStyle}
             >
                 <div className="Card-Header">
                     <div className="Card-Header-Year">
@@ -31,8 +48,8 @@ export default class Card extends React.Component {
                         Array.isArray(this.props.desc) ?
                             (
                                 <ul>
-                                    {this.props.desc.map((line) => (
-                                        <li>{line}</li>
+                                    {this.props.desc.map((line, i) => (
+                                        <li key={i}>{line}</li>
                                     ))}
                                 </ul>
 
