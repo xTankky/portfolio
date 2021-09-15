@@ -15,3 +15,7 @@
 .leftAlign {
     text-align: left;
 }
+
+.control-dots {
+    position: static !important;
+}

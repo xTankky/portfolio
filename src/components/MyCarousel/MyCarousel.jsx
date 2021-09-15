@@ -7,6 +7,8 @@ import Contact from './Contact/Contact';
 import Technos from './Technos/Technos';
 import About from './About/About';
 
+
+
 export default class MyCarousel extends Component {
     render() {
         return (
@@ -14,6 +16,7 @@ export default class MyCarousel extends Component {
                 showStatus={false}
                 // autoPlay={true}
                 infiniteLoop={true}
+                interval={5000}
                 className="MyCarousel"
             >
                 <Presentation />

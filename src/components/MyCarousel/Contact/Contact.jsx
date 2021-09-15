@@ -5,6 +5,7 @@ import '../MyCarousel.css'
 const Contact = () => {
     return (
         <div className="Slider-Wrapper">
+            <span>Je suis à la recherche dun emploi !</span>
             <span className="Contact-List-Title">Contact :</span>
             <ul className="Contact-List">
                 <li><a href="tel: +33616367579">+33616367579</a></li>
