@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
-import {Timeline} from './components'
+import {Timeline, MyCarousel} from './components'
+
+const App = () => {
+  return (
+    <div>
+      <MyCarousel />
+      <Timeline />
+    </div>
+  )
+}
 
 ReactDOM.render(
-    <Timeline />,
+    <App />,
   document.getElementById('root')
 );
