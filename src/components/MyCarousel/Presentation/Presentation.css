@@ -1,18 +1,18 @@
 .Presentation-Welcome {
     font-size: 3em;
     font-weight: 700;
-    color: #e6e6e6;
+    color: var(--text-main);
 }
 
 .Presentation-Me {
     font-size: 1.35em;
     font-weight: 400;
-    color: #cccccc;
+    color: var(--text-medium);
 }
 
 .Presentation-About {
     font-size: 1em;
     font-weight: 300;
-    color: #a3a3a3;
+    color: var(--text-dark);
     text-align: center;
 }

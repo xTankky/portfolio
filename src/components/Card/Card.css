@@ -1,7 +1,7 @@
 .Card-Wrapper {
     margin: 0 20px;
     flex: 1;
-    border: 1px solid black;
+    /* border: 1px solid var(--primary-light); */
     border-radius: 12px;
     height: min-content;
     min-height: 300px;
@@ -9,7 +9,7 @@
     -webkit-box-shadow: 0px 0px 22px 0px #000000;
     box-shadow: 0px 0px 22px 0px #000000;
     transition: transform 0.7s ease-in-out;
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
 }
 
 .Card-Wrapper hr {
@@ -17,7 +17,7 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    color: lightgrey;
+    color: var(--primary-light);
 }
 
 .Card-Header {
@@ -31,6 +31,7 @@
 
 .Card-Header-Title {
     font-weight: bolder;
+    color: var(--text-medium)
 }
 
 .Card-Body {
@@ -41,6 +42,7 @@
 .Card-Body ul {
     margin: 0;
     padding: 0 10px;
+    list-style-type: none;
 }
 
 .Card-Up {

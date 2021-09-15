@@ -49,7 +49,7 @@ export default class Card extends React.Component {
                             (
                                 <ul>
                                     {this.props.desc.map((line, i) => (
-                                        <li key={i}>{line}</li>
+                                        <li key={i}>{`➞ ${line}`}</li>
                                     ))}
                                 </ul>
 

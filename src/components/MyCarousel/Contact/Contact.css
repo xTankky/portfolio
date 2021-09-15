@@ -14,6 +14,9 @@
 .Contact-List {
     padding: 0;
     list-style-type: Contacts;
+    text-align: left;
+    margin: 0 auto;
+    width: max-content;
 }
 
 .Contact-List li {
@@ -22,6 +25,5 @@
 }
 
 .Contact-More {
-    font-size: 0.7em;
-    width: 75%;
+    font-size: 0.5em;
 }

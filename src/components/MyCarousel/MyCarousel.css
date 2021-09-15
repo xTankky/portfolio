@@ -2,8 +2,16 @@
     height: 60%;
 }
 
-.Slider-Wrapper {}
+.Slider-Wrapper {
+    font-size: 3.3vw;
+    width: max-content;
+    margin: 0 auto;
+}
 
 .Slider-Wrapper span {
-    display: inline-block;
+    display: block;
+}
+
+.leftAlign {
+    text-align: left;
 }

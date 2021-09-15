@@ -2,6 +2,13 @@
   --primary-main: #263238;
   --primary-light: #4f5b62;
   --primary-dark: #000a12;
+  --text-main: #fff;
+  --text-medium: #cccccc;
+  --text-dark: #a3a3a3;
+}
+
+a {
+  color: var(--text-dark);
 }
 
 body {
@@ -14,10 +21,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   background-color: var(--primary-main);
-  color: white;
+  color: var(--text-main);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
