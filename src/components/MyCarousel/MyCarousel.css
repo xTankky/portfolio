@@ -1,0 +1,9 @@
+.MyCarousel {
+    height: 60%;
+}
+
+.Slider-Wrapper {}
+
+.Slider-Wrapper span {
+    display: inline-block;
+}
