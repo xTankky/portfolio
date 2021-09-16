@@ -1,16 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
-import {Timeline, MyCarousel} from './components'
+import App from './App'
 
-const App = () => {
-  return (
-    <div>
-      <MyCarousel />
-      <Timeline />
-    </div>
-  )
-}
 
 ReactDOM.render(
     <App />,

@@ -1,0 +1,25 @@
+.Nav-List {
+    list-style-type: none;
+    font-size: 1.2em;
+    padding: 0;
+}
+
+.Nav-List a {
+    display: inline-block;
+    color: var(--text-main);
+    text-decoration: none;
+    width: 100%;
+}
+
+.Nav-Active {
+    background-color: var(--primary-light);
+}
+
+
+@media screen and (max-width: 600px) {
+    .Nav-List a {
+        padding: 8px 0;
+        padding-left: 24px;
+    }
+
+}
