@@ -14,9 +14,12 @@ export default class MyCarousel extends Component {
         return (
             <Carousel
                 showStatus={false}
-                // autoPlay={true}
+                autoPlay={true}
                 infiniteLoop={true}
                 interval={5000}
+                showArrows={false}
+                showThumbs={false}
+                emulateTouch={true}
                 className="MyCarousel"
             >
                 <Presentation />
