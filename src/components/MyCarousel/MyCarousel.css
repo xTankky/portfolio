@@ -19,3 +19,10 @@
 .control-dots {
     position: static !important;
 }
+
+@media screen and (max-width: 600px) {
+    .Slider-Wrapper {
+        font-size: 4vw;
+    }
+
+}
