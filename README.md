@@ -59,3 +59,5 @@ I've tried to use as little modules as possible so I can truly learn React.
 
 If there's anything to say about this, feel free to contact me.
 Otherwise, I'll still be working on this from time to time.
+
+PS : I'm not a native English speaker so if there is awful errors, please let me know =) !
