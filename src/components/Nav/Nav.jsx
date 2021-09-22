@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import './Nav.css'
 
 const Links = [
     ["Portfolio", "/"],
     ["Plus d'infos", "/more"],
-    ["Cloud", "/owncloud"],
 ]
 
 const MyLink = (props) => {
@@ -40,6 +39,8 @@ export default class Nav extends Component {
 
         activeLinks[i] = true;
 
+        document.documentElement.style.overflow = (i === 0) ? "hidden" : "auto";
+
         this.setState({ activeLinks: activeLinks })
     }
 
@@ -56,6 +57,7 @@ export default class Nav extends Component {
                             onClick={() => this.onClick(i)}
                         />
                     ))}
+                    <li><a href="https://www.thedarkunicorns.fr/owncloud">Cloud</a></li>
                 </ul>
             </div>
         )

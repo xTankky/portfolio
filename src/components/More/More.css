@@ -1,0 +1,16 @@
+.More-Wrapper {
+    margin: 0 12px;
+}
+
+.More-Class {
+    padding: 2px;
+    background-color: #1856bd;
+}
+
+.More-Hobby {
+    text-decoration: underline;
+}
+
+.More-Coding-List li {
+    width: max-content;
+}

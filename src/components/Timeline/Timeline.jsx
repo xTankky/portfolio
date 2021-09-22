@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive'
 import './Timeline.css'
 import { Card } from '../'
 import { Cards_Contents } from './Cards-Content';
+import Arrow from './arrow.png'
 
 const Mobile = ({ children }) => {
     const isMobile = useMediaQuery({ maxWidth: 600 })
@@ -87,11 +88,11 @@ export default class Timeline extends React.Component {
     render() {
         return (
             <div className="Timeline-Wrapper">
-                <div><input className="Timeline-Button Timeline-Prev" type="image" src="icons/arrow.png" alt="" onClick={() => this.swipe("LEFT")} /></div>
+                <div><input className="Timeline-Button Timeline-Prev" type="image" src={Arrow} alt="" onClick={() => this.swipe("LEFT")} /></div>
                 <div className="Timeline-Cards">
                     {this.renderCard(this.state.displayedCards)}
                 </div>
-                <div><input className="Timeline-Button Timeline-Next" type="image" src="icons/arrow.png" alt="" onClick={() => this.swipe("RIGHT")} /></div>
+                <div><input className="Timeline-Button Timeline-Next" type="image" src={Arrow} alt="" onClick={() => this.swipe("RIGHT")} /></div>
             </div>
         )
     }
